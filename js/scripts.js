@@ -6,10 +6,10 @@ $(document).ready(function(){
     $("#result").text(result);
   });
   var leapYear1 = function(year){
-    if ((year % 4 ===0) && (year % 100 !== 0)) {
-      return true;
+    if ((year % 4 ===0) && (year % 100 !== 0) || (year % 400 === 0)) {
+      return "Leap Year";
     } else {
-      return false;
+      return "Not a lear year";
     }
 };
 });
